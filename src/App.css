@@ -1,38 +1,209 @@
+@font-face {
+  font-family: "Dungeon";
+  src: local("Cardinal"),
+    url("./Cardinal.ttf") format("truetype");
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: #1f1a2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  min-height: 100vh;
+  font-family: "Dungeon";
+  width: 98vw;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.Tyrmavuori-logo {
+  max-height: 40vmin;
+  max-width: 90vw;
+  pointer-events: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-text {
+  font-size: 1em;
+  margin-bottom: 2em;
+  max-width: 90%;
+  align-items: center;
+}
+
+.streaming-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.streaming-links {
+  color: white;
+  margin-bottom: 1em;
+}
+
+a:hover {
+  color: rgb(239, 100, 100);
+}
+
+a:link {
+  color: #b70061;
+}
+
+a:visited {
+  color: #ed95ff;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.menu-album-title {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 0.5em;
+  border: 2px solid white;
+  border-radius: 0.5em;
+  height: 1.75em;
+  cursor: pointer;
+  padding-left: 1em;
+  padding-right: 1em;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.menu-album-title-text {
+  white-space: nowrap;
+}
+
+.album-title-not-selected {
+  background-color: #000000;
+}
+
+.album-title-not-selected:hover {
+  background-color: #000027;
+}
+
+
+.album-title-selected {
+  background-color: #1c1f24;
+}
+
+.album-content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+}
+
+.album-content-fading {
+  opacity: 0;
+  filter: blur(14em) grayscale(100%) brightness(0);
+  transition: opacity 0.4s ease-out, filter 0.4s;
+}
+
+.album-content-appearing {
+  opacity: 1;
+  transition: opacity 0.2s ease-out;
+}
+
+.album-cover {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.album-title-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.album-title {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.album-release-date {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+.album-tracklist {
+  font-size: 1.5em;
+}
+
+.single-track {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+ }
+
+.single-track-number {
+  width: 2em;
+}
+
+.single-track-name {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.vali {
+  height: 1em;
+}
+
+.story {
+  max-width: 1200px;
+  font-size: 1em;
+  margin-bottom: 2em;
+  font-family: "Light";
+}
+
+.story-line {
+  margin: 1em;
+}
+
+.album-links {
+  display: flex;
+  flex-direction: column;
+  font-family: "Light";
+}
+
+.album-link-single {
+  margin-top: 0.5em;
+}
+
+.hr-break {
+  width: 100%;
+}
+.credits {
+  font-size: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-family: "Light";
 }
