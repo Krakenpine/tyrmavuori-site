@@ -148,6 +148,14 @@ a:visited {
   margin-bottom: 0.5em;
 }
 
+.album-not-released {
+  display: flex;
+  align-items: start;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  min-height: 1200px;
+}
+
 .album-tracklist {
   font-size: 1.5em;
 }

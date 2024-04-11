@@ -33,8 +33,8 @@ function App() {
           Tyrmävuori tells a story of a goblin civilization in a series of intrumental concept albums.
         </div>
         <div className="streaming-links">
-          <a href="https://tyrmavuori.bandcamp.com/">Tyrmävuori on Bandcamp</a>
-          <div>Tyrmävuori on Spotify</div>
+          <a href="https://tyrmavuori.bandcamp.com/" target="_blank" rel="noreferrer">Tyrmävuori on Bandcamp</a>
+          <a href="https://open.spotify.com/artist/3hSWHWXfiDVzGieoA7Au19?si=LTqitN5sRMShDalRZIH5QQ" target="_blank" rel="noreferrer">Tyrmävuori on Spotify</a>
         </div>
       </header>
       <div className="menu">
@@ -50,8 +50,16 @@ function App() {
         <img src={albums[selectedAlbum].cover} className="album-cover" alt=""/>
         <div className="album-title-container">
           <div className="album-title">{albums[selectedAlbum].title}</div>
+          <React.Fragment>
+          {
+          albums[selectedAlbum].released ?
+          <div className="album-release-date">{"Released "+ albums[selectedAlbum].released}</div>
+          :
+          <div className="album-not-released">Not yet released!</div>
+          }
+          </React.Fragment>
+
           
-          <div className="album-release-date">{albums[selectedAlbum].released ? "Released "+ albums[selectedAlbum].released : "Not yet released!"}</div>
         </div>
         <div className="album-tracklist">
           {albums[selectedAlbum].tracks.map((track, index) => {
@@ -64,7 +72,7 @@ function App() {
         <div className="vali" />
         <div className="album-links">
             {albums[selectedAlbum].links.map(link =>{
-              return <a href={link.link} className="album-link-single">{link.name}</a>
+              return <a href={link.link} className="album-link-single" target="_blank" rel="noreferrer">{link.name}</a>
             })}
         </div>
         <div className="vali" />
@@ -76,7 +84,8 @@ function App() {
       <div className="credits">
         <div>Composition, writing, and website by Lauri Pekkarinen</div>
         <div>Story concepts by Pekka Rihko</div>
-        <div>Reconstitution cover art by <a href="https://www.mamuunudesign.com">Mamuunu Design</a></div>
+        <div>Logo by <a href="https://www.fiverr.com/artifaktart" target="_blank" rel="noreferrer">Artifakt Art</a></div>
+        <div>Reconstitution cover art by <a href="https://www.mamuunudesign.com" target="_blank" rel="noreferrer">Mamuunu Design</a></div>
       </div>
     </div>
   );

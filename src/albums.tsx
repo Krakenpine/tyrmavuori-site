@@ -47,8 +47,8 @@ const reconstitution: Album = {
     cover: reconstitutionCover,
     links: [
         { name: "Bandcamp", link: "https://tyrmavuori.bandcamp.com/album/i-reconstitution"},
-        { name: "Spotify", link: "ei ole"},
-        { name: "Youtube", link: "http://www.youtube.com"}
+        { name: "Spotify", link: "https://open.spotify.com/album/7Eg7kyZYqbT5KabBc0N7pb?si=gxb7jR_vQ4uuY43l5HrnGg"},
+        { name: "Youtube", link: "https://youtu.be/MxMs7SBkTC4"}
     ]
 }
 
