@@ -1,4 +1,4 @@
-import reconstitutionCover from "./reconstitution1.png";
+import reconstitutionCover from "./reconstitution1.jpg";
 
 const reconstitutionTracks = [
     "The Dark Lord has Fallen",
