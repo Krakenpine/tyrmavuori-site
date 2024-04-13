@@ -82,6 +82,7 @@ function App() {
       </div>
       <hr className="hr-break"/>
       <div className="credits">
+        <div>Contant elder@tyrmavuori.net</div>
         <div>Composition, writing, and website by Lauri Pekkarinen</div>
         <div>Story concepts by Pekka Rihko</div>
         <div>Logo by <a href="https://www.fiverr.com/artifaktart" target="_blank" rel="noreferrer">Artifakt Art</a></div>
